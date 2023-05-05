@@ -1,0 +1,5 @@
+{
+    "watch": ["**/*.pl", "**/*.pm"],
+    "ext": "pl, pm",
+    "exec": "plackup app/bin/app.psgi"
+}

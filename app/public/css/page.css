@@ -1,0 +1,4 @@
+.flex-container {
+    display: flex;
+    gap: 20px; /* Add 20 pixels of space between each flex item */
+}
