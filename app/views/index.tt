@@ -56,8 +56,7 @@
 
       <div id="content">
         <div id="header">
-          <h1>Perl is dancing</h1>
-          <h2>You&rsquo;ve joined the dance floor!</h2>
+          <h4>Perl v.5.36 is dancing</h4>
         </div>
 
         <div id="getting-started">

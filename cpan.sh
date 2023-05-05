@@ -12,15 +12,16 @@ cpanm Crypt::JWT
 cpanm LWP::UserAgent
 cpanm LWP::Protocol::https
 
-### Testing
+### Template Engine
+cpanm Template::Toolkit
 
+### Testing
 cpanm Test::More
 cpanm Test::Deep
 cpanm Test::Warn
 
 ### Dancer
-
-cpanm Dancer2
+# cpanm Dancer2 #installed via apt
 cpanm Dancer2::Plugin::JWT
 
 ### Database related
