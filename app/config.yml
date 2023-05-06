@@ -38,6 +38,17 @@ template: "template_toolkit"
 #       end_tag:   '%>'
 
 # session engine
+
+session: "Redis"
+
+engines:
+  session:
+    Redis:
+      server: "172.17.0.5:6379" # Change this to your Redis server address and port
+      password: "" # Optional: If your Redis server requires a password, set it here
+      database: 0 # Optional: If you want to use a specific Redis database, set its index here
+
+
 #
 # Simple: in-memory session store - Dancer2::Session::Simple
 # YAML: session stored in YAML files - Dancer2::Session::YAML

@@ -28,6 +28,9 @@ cpanm Dancer2::Plugin::JWT
 cpanm DBI
 cpanm DBD::SQLite
 
+### Redis
+cpanm Dancer2::Session::Redis Redis
+
 # Postgres:
 sudo apt-get -y install libpq-dev
 pg_config
