@@ -30,10 +30,12 @@ get '/counter' => sub {
 };
 
 get '/session' => sub {
-    my $counter = session('counter');
-    $counter++;
+    # my $counter = session('counter');
+    my $counter = session('counter') || 0;
+    $counter = $counter + 2;
     session counter => $counter;
-    return $counter;
+    my $counter2 = session('counter') || 0;
+    return "$counter $counter2";
 };
 
 

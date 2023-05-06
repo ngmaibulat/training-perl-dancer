@@ -44,9 +44,22 @@ session: "Redis"
 engines:
   session:
     Redis:
-      server: "172.17.0.5:6379" # Change this to your Redis server address and port
-      password: "" # Optional: If your Redis server requires a password, set it here
-      database: 0 # Optional: If you want to use a specific Redis database, set its index here
+      cookie_name: "sessionid"
+      is_http_only: 1
+      redis_server: "172.17.0.5:6379"
+      redis_password: ""
+      session_duration: 86400
+      # cookie_duration: 86400
+      redis_name: "my_connection_name"
+      redis_serialization:
+        # Use Sereal as serialization module:
+        module: "Dancer2::Session::Redis::Serialization::Sereal"
+        # Serialization module configuration:
+        # Use snappy compression
+        compression: "snappy"
+      # server: "172.17.0.5:6379" # Change this to your Redis server address and port
+      # password: "" # Optional: If your Redis server requires a password, set it here
+      # database: 0 # Optional: If you want to use a specific Redis database, set its index here
 
 
 #

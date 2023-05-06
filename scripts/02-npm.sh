@@ -1,4 +1,3 @@
-cd ..
 
 npm install -g tailwindcss postcss-cli autoprefixer
 
@@ -9,3 +8,6 @@ tailwindcss
 postcss  -h
 
 autoprefixer --info
+
+cd ..
+npm install
