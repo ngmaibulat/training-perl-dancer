@@ -1,0 +1,19 @@
+    <table class="table-auto my-4 w-full">
+        <thead>
+            <tr>
+                <th class="px-4 py-2">Column 1</th>
+                <th class="px-4 py-2">Column 2</th>
+                <!-- Add more columns as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            [% FOREACH row IN data %]
+                <tr>
+                    <td class="border px-4 py-2">[% row.column1 %]</td>
+                    <td class="border px-4 py-2">[% row.column2 %]</td>
+                    <!-- Add more columns as needed -->
+                </tr>
+            [% END %]
+        </tbody>
+    </table>
+    

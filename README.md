@@ -1,7 +1,33 @@
+### Resources
+
+- https://manpages.ubuntu.com/manpages/trusty/man3/Dancer2::Manual.3pm.html
+- https://manpages.ubuntu.com/manpages/bionic/man3/Dancer2::Manual.3pm.html
+- https://metacpan.org/dist/Plack/view/script/plackup
+- https://metacpan.org/pod/Dancer2::Plugin::JWT
+- https://metacpan.org/pod/Dancer2
+- https://uwsgi-docs.readthedocs.io/en/latest/PSGIquickstart.html
+- https://gist.github.com/rleir/84fb6db899af476f5142
+- https://perlmaven.com/
+- https://perlmaven.com/search/Template::Toolkit
+- http://template-toolkit.org/about.html
+- http://www.template-toolkit.org/docs/manual/Directives.html
+- https://metacpan.org/pod/Test::Deep
+- https://perldoc.perl.org/Test::More
+- https://perldoc.perl.org/perlop#Regexp-Quote-Like-Operators
+- http://modernperlbooks.com/books/modern_perl/index.html
+- https://learn.perl.org/books/beginning-perl/
+- https://www.perltutorial.org/
+- https://metacpan.org/pod/Plack
+- https://metacpan.org/pod/Text::ANSITable
+
+- https://github.com/libwww-perl/uri-db/
+
 
 ### Using Dancer2 Web Framework
 
-vscode ➜ /workspaces/training-perl-dancer (main) $ dancer2 gen -a app
+```
+dancer2 gen -a app
+```
 
 + app
 + app/.dancer
@@ -53,3 +79,52 @@ If you need community assistance, the following resources are available:
 - IRC: irc.perl.org#dancer
 
 Happy Dancing!
+
+
+### Structure
+
+```
+.
+├── bin
+│   └── app.psgi
+├── config.yml
+├── cpanfile
+├── environments
+│   ├── development.yml
+│   └── production.yml
+├── lib
+│   └── app.pm
+├── Makefile.PL
+├── MANIFEST
+├── MANIFEST.SKIP
+├── public
+│   ├── 404.html
+│   ├── 500.html
+│   ├── css
+│   │   ├── error.css
+│   │   ├── main.css
+│   │   ├── page.css
+│   │   ├── style.css
+│   │   └── tailwind.css
+│   ├── dispatch.cgi
+│   ├── dispatch.fcgi
+│   ├── favicon.ico
+│   ├── images
+│   │   ├── perldancer-bg.jpg
+│   │   └── perldancer.jpg
+│   └── javascripts
+│       └── jquery.js
+├── t
+│   ├── 001_base.t
+│   └── 002_index_route.t
+├── views
+│   ├── about.tt
+│   ├── contact.tt
+│   ├── index.tt
+│   └── layouts
+│       └── layout.tt
+└── views-std
+    ├── index.tt
+    └── layouts
+        └── main.tt
+```
